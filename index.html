@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Classification Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classification par Duels</h1>
+        <div id="add-word-section">
+            <input type="text" id="newWord" placeholder="Ajouter un mot">
+            <button id="addWordBtn">Ajouter</button>
+            <div id="wordMsg" class="word-msg"></div>
+        </div>
+        <div>
+            <h3>Mots ajoutés (<span id="wordCount">0</span>) :</h3>
+            <ul id="wordList"></ul>
+        </div>
+        <button id="startBtn">Commencer les duels</button>
+        <div id="duelSection" style="display:none;">
+            <h2>Tu préfères :</h2>
+            <button id="duelBtn1" class="duel-btn"></button>
+            <span id="vsText">ou</span>
+            <button id="duelBtn2" class="duel-btn"></button>
+            <div id="duelCounter"></div>
+            <button id="backDuelBtn" class="duel-btn" style="margin-top:12px;">&#8592; Retour</button>
+        </div>
+        <div id="scoreSection" style="display:none;">
+            <h2>Classement complet :</h2>
+            <ul id="scoreList"></ul>
+            <button id="restartBtn">Recommencer</button>
+        </div>
+        <div class="action-bar">
+    <input type="text" id="saveName" placeholder="Nom pour exporter/importer" />
+    <button id="exportBtn" title="Exporter">&#8681;</button>
+    <input type="file" id="importInput" style="display:none;" />
+    <button id="importBtn" title="Importer">&#8679;</button>
+    <button id="confirmLoadBtn" style="display:none; margin-left:6px; font-size:0.95em; padding:3px 10px;">Confirmer</button>
+    <button id="resetAllBtn" class="reset-btn" title="Réinitialiser tout">Réinitialiser</button>
+</div>
+    </div>
+    <script src="app.js"></script>
+<div class="beta-badge">
+    🚧 Site en beta | Version 1.0.0
+</div>
+</body>
+</html>
